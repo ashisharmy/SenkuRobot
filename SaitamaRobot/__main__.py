@@ -80,7 +80,7 @@ You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-*Main* commands available [:](https://telegra.ph/file/418fe04d27f1fb02788e3.png)
+*Main* commands available [:](https://telegra.ph/file/0ae980cbab39507b23885.jpg)
 
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -92,12 +92,12 @@ HELP_STRINGS = """
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/e4b3dc747eb56dca07797.png"
+SAITAMA_IMG = "https://telegra.ph/file/0ae980cbab39507b23885.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
+ You can support the project via [CONTACT](t.me/Gamerfucker) \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @CheemsUserbot."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -214,26 +214,26 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                         InlineKeyboardButton(
-                            text=" 👑 Summon Me ",
+                            text=" 👑 Add Me ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔔 Updates ",
-                             url="https://t.me/SenkuUpdates")
+                             url="https://t.me/CheemsUserbot")
                      ],
                      [
                         InlineKeyboardButton(
                             text=" ✨ Help ",
-                            url="https://t.me/SenkuRobot?start=help"),
+                            url="https://t.me/missmiakhalifabot?start=help"),
                          InlineKeyboardButton(
                             text=" ⚡️ Get Started ",
-                             url="https://t.me/SenkuUpdates/4")        
+                             url="https://t.me/CheemsUserbot")        
                        
                      ],
                      [
                         InlineKeyboardButton(
-                             text=" ❤️ Source Code ",
-                             url="https://github.com/FtSasaki/SenkuRobot")
+                             text=" ❤️ SUPPORT ",
+                             url="https://t.me/CheemsUserbot")
                     
                     ]
                    ]
@@ -570,7 +570,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1209574071 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
